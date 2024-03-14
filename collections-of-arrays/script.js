@@ -26,12 +26,8 @@ let guestList = [
 let askName = 'What is your name?';
 let userName = prompt(askName);
 
-for (let i = 0; i <= guestList.length; i++) {
-    console.log(guestList[i]);
-    console.log(userName);
-    if (guestList[i] === userName) {
-        alert('Welcome ' + userName + '.');
-    } else {
-        console.log('Scram!');
-    }
+if (guestList.includes(userName)) {
+    alert('Welcome ' + userName + '.');
+} else {
+    alert('Your name is not on the list.');
 }
