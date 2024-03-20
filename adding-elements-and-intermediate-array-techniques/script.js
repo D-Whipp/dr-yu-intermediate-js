@@ -22,27 +22,35 @@ function fizzBuzz() {
 
 fizzBuzz();
 
-// let output = [];
-// let counter;
+// ************* MY CODE **************
 
-// function fizzBuzz() {
-//     let counter = output.length + 1;
-//     while (counter <= 5) {
-//         if (counter % 3 === 0 && counter % 5 === 0) {
-//             output.push('FizzBuzz');
-//         } else if (counter % 5 === 0) {
-//             output.push('Buzz');
-//         } else if (counter % 3 === 0) {
-//             output.push('Fizz');
-//         } else {
-// output.push(output.length + 1);
-//             output.push(counter + 1);
-//         }
-//     }
+let myOutput = [];
+// let myCounter;
 
-// counter++;
-//     console.log(output);
-// }
+function myFizzBuzz() {
+    console.log('My output: ', myOutput);
+    // let myCounter = myOutput.length + 1;
+    while (myOutput.length <= 15) {
+        if (myOutput.length % 3 === 0 && myOutput.length % 5 === 0) {
+            myOutput.push('FizzBuzz');
+            // console.log('Modulo Both: ', myOutput);
+        } else if (myOutput.length % 5 === 0) {
+            myOutput.push('Buzz');
+            // console.log('Modulo 5: ', myOutput);
+        } else if (myOutput.length % 3 === 0) {
+            myOutput.push('Fizz');
+        } else {
+            myOutput.push(myOutput.length + 1);
+            // myOutput.push(myCounter + 1);
+            // console.log('No Modulo: ', myOutput);
+        }
+    }
+
+    // myCounter++;
+    console.log(myOutput);
+}
+
+myFizzBuzz();
 
 // function fizzBuzz() {
 //     let counter = output.push(output.length + 1);
@@ -51,7 +59,6 @@ fizzBuzz();
 //     console.log(counter);
 // }
 
-fizzBuzz();
 // fizzBuzz();
 // fizzBuzz();
 // fizzBuzz();
