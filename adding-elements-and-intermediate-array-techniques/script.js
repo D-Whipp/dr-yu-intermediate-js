@@ -17,10 +17,10 @@ function fizzBuzz() {
         count++;
     }
 
-    console.log(output);
+    console.log('Output: ', output);
 }
 
-fizzBuzz();
+// fizzBuzz();
 
 // ************* MY CODE **************
 
@@ -28,9 +28,11 @@ let myOutput = [];
 // let myCounter;
 
 function myFizzBuzz() {
-    console.log('My output: ', myOutput);
-    // let myCounter = myOutput.length + 1;
-    while (myOutput.length <= 15) {
+    // console.log('My output: ', myOutput);
+    let myCounter = myOutput.length + 1;
+    console.log('My Counter: ', myCounter);
+    while ( myOutput.length <= 100) {
+        // console.log('myCounter: ', myCounter);
         if (myOutput.length % 3 === 0 && myOutput.length % 5 === 0) {
             myOutput.push('FizzBuzz');
             // console.log('Modulo Both: ', myOutput);
@@ -40,14 +42,15 @@ function myFizzBuzz() {
         } else if (myOutput.length % 3 === 0) {
             myOutput.push('Fizz');
         } else {
-            myOutput.push(myOutput.length + 1);
+            myOutput.push(myOutput.length);
             // myOutput.push(myCounter + 1);
             // console.log('No Modulo: ', myOutput);
+            myCounter = myCounter + 1;
         }
     }
 
     // myCounter++;
-    console.log(myOutput);
+    console.log('My Output: ', myOutput);
 }
 
 myFizzBuzz();
